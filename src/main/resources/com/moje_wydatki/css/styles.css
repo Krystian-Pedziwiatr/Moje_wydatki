@@ -1,0 +1,28 @@
+.root{
+    -fx-font-family:Lao MN;
+    -fx-font-size: 14px;
+
+}
+
+.main{
+    -fx-background-color:#ffffff;
+}
+
+.top-menu{
+
+}
+
+.my-budget{
+
+
+
+}
+
+
+.selected{
+    -fx-background-color: #E4E4E4;
+}
+
+.mouse-moved: hover{
+    -fx-background-color: #E4E4E4;
+}

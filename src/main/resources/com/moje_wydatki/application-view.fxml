@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.moje_wydatki.ViewController">
+    <children>
+        <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0">
+         <children>
+            <BorderPane prefHeight="600.0" prefWidth="1200.0">
+               <top>
+                  <HBox prefHeight="60.0" prefWidth="200.0" styleClass="top-menu" stylesheets="@css/styles.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="41.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@./img/money-cash-icon-png.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="55.0" prefWidth="168.0" text="Moje Wydatki">
+                           <font>
+                              <Font name="Lao MN Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </top>
+               <left>
+                  <VBox prefHeight="540.0" prefWidth="234.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Separator prefWidth="200.0" />
+                        <Label fx:id="mywallet" onMouseClicked="#handleLabelClickMyWallet" prefHeight="40.0" prefWidth="235.0" styleClass="mouse-moved" stylesheets="@css/styles.css" text="Mój portfel">
+                           <font>
+                              <Font name="Lao MN" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="budget" onMouseClicked="#handleLabelClickBudget" prefHeight="40.0" prefWidth="235.0" styleClass="mouse-moved" stylesheets="@css/styles.css" text="Budżet">
+                           <font>
+                              <Font name="Lao MN" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="50.0" onMouseClicked="#handleLabelClickExpenses" prefHeight="40.0" prefWidth="235.0" styleClass="mouse-moved" stylesheets="@css/styles.css" text="Wydatki">
+                           <font>
+                              <Font name="Lao MN" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="settings" layoutX="10.0" layoutY="90.0" onMouseClicked="#handleLabelClickSettings" prefHeight="40.0" prefWidth="234.0" styleClass="mouse-moved" stylesheets="@css/styles.css" text="Ustawienia ">
+                           <font>
+                              <Font name="Lao MN" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="userf_db" layoutX="20.0" layoutY="133.0" prefHeight="40.0" prefWidth="234.0">
+                           <font>
+                              <Font name="Lao MN" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="main" stylesheets="@css/styles.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="539.0" prefWidth="966.0">
+                           <children>
+                              <Label fx:id="welcome" alignment="CENTER" prefHeight="210.0" prefWidth="970.0" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Lao MN Bold" size="24.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding></Label>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="302.0" fitWidth="592.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/AdobeStock_486093914.jpeg" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="300.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Zrobić budżet to wskazać swoim pieniądzom, dokąd mają iść, zamiast się zastanawiać, gdzie się rozeszły.&#10;JOHN C. MAXWELL" textAlignment="CENTER" wrappingWidth="931.3609619140625">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Bangla MN" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children></VBox>
+               </center>
+            </BorderPane>
+         </children></AnchorPane>
+    </children>
+</StackPane>
